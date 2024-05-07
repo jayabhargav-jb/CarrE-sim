@@ -14,7 +14,6 @@
 	<xacro:property name="robot_wheel_radius" value="0.1"/>
 
 	<xacro:property name="camera_mass" value="0.1"/>
-	<!-- <xacro:property name="hokoyu_mass" value="1e-5"/> -->
 
 	<!-- Make Chassis of Bot -->
 	<link name="chassis">
@@ -192,33 +191,6 @@
 		</collision>
 	</link>
 
-	<!-- Hokuyo Lidar -->
-	<!-- <link name="hokuyo">
-		<inertial>
-			<mass value="${hokoyu_mass}"/>
-			<origin xyz="0 0 0" rpy="0 0 0"/>
-
-			<inertia
-		        ixx="1e-6" ixy="0.0" ixz="0.0"
-		        iyy="1e-6" iyz="0.0"
-		        izz="1e-6"
-		      />
-		</inertial>
-
-		<visual>
-			<origin xyz="0 0 0" rpy="0 0 0"/>
-			<geometry>
-				<mesh filename="package://carre_sim/meshes/hokuyo.dae"/>
-			</geometry>
-		</visual>
-
-		<collision>
-			<origin xyz="0 0 0" rpy="0 0 0"/>
-			<geometry>
-				<box size="0.1 0.1 0.1"/>
-			</geometry>
-		</collision>
-	</link> -->
 
 	<!-- Project center to the ground -->
 	<link name="robot_footprint"></link>
@@ -276,13 +248,6 @@
 		<axis xyz="0 1 0"/>
 	</joint>
 
-	<!-- Hokoyu Joint -->
-	<!-- <joint name="hokuyo_joint" type="fixed">
-	    <origin xyz="0.2 0 0.2" rpy="0 0 0" />
-	    <parent link="chassis"/>
-	    <child link="hokuyo" />  
-	    <axis xyz="0 1 0"/> 
-	</joint> -->
 
 	<joint name="robot_footprint_joint" type="fixed">
 		<origin xyz="0 0 0" rpy="0 0 0" />
@@ -330,9 +295,6 @@
 		<maxVel>1.0</maxVel>
 		<minDepth>0.00</minDepth>
 	</gazebo>
-	<!--<gazebo reference="right_wheel">
-		<material>Gazebo/Green</material>
-	</gazebo>-->
 
 	<gazebo reference="camera">
 		<material>Gazebo/Blue</material>
