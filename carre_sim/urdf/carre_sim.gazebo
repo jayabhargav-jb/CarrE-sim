@@ -57,6 +57,8 @@
         <cameraName>camera</cameraName>
         <imageTopicName>rgb/image_raw</imageTopicName>
         <cameraInfoTopicName>rgb/camera_info</cameraInfoTopicName>
+        <!-- <depthImageTopicName>depth/depth_raw</depthImageTopicName>
+        <pointCloudTopicName>pointcloud/pc2</pointCloudTopicName> -->
         <frameName>camera</frameName>
         <hackBaseline>0.07</hackBaseline>
         <distortionK1>0.0</distortionK1>
@@ -65,6 +67,31 @@
         <distortionT1>0.0</distortionT1>
         <distortionT2>0.0</distortionT2>
       </plugin>
+      <!-- <plugin name="camera_depth" filename="libgazebo_ros_openni_kinect.so">
+        <robotNamespace>/carre_sim</robotNamespace>
+        <baseline>0.2</baseline>
+        <alwaysOn>true</alwaysOn>
+        <updateRate>0.0</updateRate>
+        <cameraName>camera_ir</cameraName>
+        <imageTopicName>/color/image_raw</imageTopicName>
+        <cameraInfoTopicName>color/camera_info</cameraInfoTopicName>
+        <depthImageTopicName>/depth/image_raw</depthImageTopicName>
+        <depthImageCameraInfoTopicName>/depth/camera_info</depthImageCameraInfoTopicName>
+        <pointCloudTopicName>/depth/points</pointCloudTopicName>
+        <frameName>camera</frameName>
+        <pointCloudCutoff>0.5</pointCloudCutoff>
+        <pointCloudCutoffMax>3.0</pointCloudCutoffMax>
+        <distortionK1>0</distortionK1>
+        <distortionK2>0</distortionK2>
+        <distortionK3>0</distortionK3>
+        <distortionT1>0</distortionT1>
+        <distortionT2>0</distortionT2>
+        <CxPrime>0</CxPrime>
+        <Cx>0</Cx>
+        <Cy>0</Cy>
+        <focalLength>0</focalLength>
+        <hackBaseline>0</hackBaseline>
+      </plugin> -->
     </sensor>
   </gazebo>
 
