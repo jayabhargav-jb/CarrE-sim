@@ -1,2 +1,0 @@
-carre_control_ui:carre_sim
--DCATKIN_DEVEL_PREFIX=/carre_ws/devel -DCMAKE_INSTALL_PREFIX=/carre_ws/install -G Unix Makefiles
