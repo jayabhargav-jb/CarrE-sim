@@ -1,0 +1,8 @@
+prefix=/carre_ws/install
+
+Name: carre_control_ui
+Description: Description of carre_control_ui
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

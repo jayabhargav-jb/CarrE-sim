@@ -1,0 +1,8 @@
+prefix=/carre_ws/install
+
+Name: carre_sim
+Description: Description of carre_sim
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
